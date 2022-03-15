@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="538.0" prefWidth="453.0" style="-fx-background-color: #f5feff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="40.0" layoutY="31.0" text="Personal Details">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="41.0" layoutY="65.0" text="First Name:" textAlignment="JUSTIFY" />
+      <Label layoutX="40.0" layoutY="98.0" text="Last Name:" textAlignment="JUSTIFY" />
+      <Label layoutX="46.0" layoutY="132.0" text="Age:" />
+      <Label layoutX="41.0" layoutY="173.0" text="NIC /Passport Number:" />
+      <Label layoutX="41.0" layoutY="214.0" text="Gender:" />
+      <TextField fx:id="fname" layoutX="124.0" layoutY="61.0" prefHeight="25.0" prefWidth="235.0" />
+      <TextField fx:id="lname" layoutX="124.0" layoutY="94.0" prefHeight="25.0" prefWidth="235.0" />
+      <TextField fx:id="age" layoutX="124.0" layoutY="128.0" prefHeight="25.0" prefWidth="50.0" />
+      <TextField layoutX="174.0" layoutY="169.0" prefHeight="25.0" prefWidth="188.0" />
+      <RadioButton fx:id="astra" layoutX="110.0" layoutY="214.0" mnemonicParsing="false" onAction="#astra" text="AstraZeneca" />
+      <RadioButton fx:id="sino" layoutX="212.0" layoutY="214.0" mnemonicParsing="false" onAction="#sino" text="Sinopharm" />
+      <RadioButton fx:id="fizer" layoutX="304.0" layoutY="214.0" mnemonicParsing="false" onAction="#fizer" text="Pfizer" />
+      <Label layoutX="44.0" layoutY="254.0" text="Booth Number:" />
+      <CheckBox fx:id="booth1" layoutX="145.0" layoutY="254.0" mnemonicParsing="false" onAction="#booth1" text="Booth 1" />
+      <CheckBox fx:id="booth2" layoutX="218.0" layoutY="254.0" mnemonicParsing="false" onAction="#booth2" text="Booth 2" />
+      <Label layoutX="290.0" layoutY="254.0" text="(AstraZeneca only)" />
+      <CheckBox fx:id="booth3" layoutX="145.0" layoutY="282.0" mnemonicParsing="false" onAction="#booth3" text="Booth 3" />
+      <CheckBox fx:id="booth4" layoutX="218.0" layoutY="282.0" mnemonicParsing="false" onAction="#booth4" text="Booth 4" />
+      <Label layoutX="290.0" layoutY="282.0" text="(Sinopharm only)" />
+      <CheckBox fx:id="booth5" layoutX="145.0" layoutY="312.0" mnemonicParsing="false" onAction="#booth5" text="Booth 5" />
+      <CheckBox fx:id="booth6" layoutX="218.0" layoutY="312.0" mnemonicParsing="false" onAction="#booth6" text="Booth 6" />
+      <Label layoutX="290.0" layoutY="312.0" text="(Pfizer only)" />
+      <Button fx:id="btn" layoutX="156.0" layoutY="352.0" mnemonicParsing="false" onAction="#add" text="Generate Receipt" />
+      <Label fx:id="firstname" layoutX="32.0" layoutY="411.0" prefHeight="17.0" prefWidth="372.0" />
+      <Label fx:id="vaccine" layoutX="33.0" layoutY="466.0" prefHeight="17.0" prefWidth="359.0" />
+      <Label fx:id="agen" layoutX="33.0" layoutY="439.0" prefHeight="17.0" prefWidth="351.0" />
+      <Label fx:id="invoice" layoutX="32.0" layoutY="394.0" prefHeight="17.0" prefWidth="323.0" />
+      <Label fx:id="number" layoutX="35.0" layoutY="492.0" prefHeight="17.0" prefWidth="259.0" />
+   </children>
+</AnchorPane>
